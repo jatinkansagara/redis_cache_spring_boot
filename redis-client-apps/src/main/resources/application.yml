@@ -11,9 +11,17 @@ spring:
       hibernate:
         dialect : org.hibernate.dialect.MySQLDialect
         format-sql : true
-    show-sql: true  cache:    type: redis    redis:      cache-null-values: false
-      time-to-live: 0  redis:    host: localhost
-    database: 0    port: 6379
+    show-sql: true
+  cache:
+    type: redis
+    redis:
+      cache-null-values: false
+      time-to-live: 0
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
       
-    
-server:  servlet:    context-path: /redisClientApps
+server:
+  servlet:
+    context-path: /redisClientApps
